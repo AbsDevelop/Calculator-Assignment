@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  
+  <!-- scripts -->
+  <script src="components/loader.js"></script>
+  <script src="lib/jquery-3.6.0.min.js"></script>
+  <script src="components/Execucao.js"></script>
+
+  <!-- estilos-->
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="retângulo">
+		<div class="jumbotron"><h1>A Calculadora</h1></div>
+		<h4 class="frase"><i>Com base em html e Javascript</i></h4>
+		<br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 offset-lg-4" id="calculadora">
+					<div class="col-lg-12"><h3><input type="text" class="form-control" id="visor" placeholder="0"></h3></div>
+          <br>
+					<div class="row">
+						<div class="col-lg-3">
+							<button type="button" class="btn btn-primary n" id="bsete" onclick="bnúmeros('7')"><h2>7</h2></button>
+							<button type="button" class="btn btn-primary n" id="bquatro" onclick="bnúmeros('4')"><h2>4</h2></button>
+							<button type="button" class="btn btn-primary n" id="bum" onclick="bnúmeros('1')"><h2>1</h2></button>
+							<button type="button" class="btn btn-link s" id="bvezes" onclick="bsinais('x')"><h2>x</h2></button>
+							<button type="button" class="btn btn-link s" id="bdivisão" onclick="bsinais('/')"><h2>/</h2></button>
+						</div>
+						<div class="col-lg-3">
+							<button type="button" class="btn btn-primary n" id="boito" onclick="bnúmeros('8')"><h2>8</h2></button>
+							<button type="button" class="btn btn-primary n" id="bcinco" onclick="bnúmeros('5')"><h2>5</h2></button>
+							<button type="button" class="btn btn-primary n" id="bdois" onclick="bnúmeros('2')"><h2>2</h2></button>
+							<button type="button" class="btn btn-primary n" id="bzero" onclick="bnúmeros('0')"><h2>0</h2></button>
+							<button type="button" class="btn btn-link s" id="bexpo" onclick="bsinais('^')"><h2>^</h2></button>
+						</div>
+						<div class="col-lg-3">
+							<button type="button" class="btn btn-primary n" id="bnove" onclick="bnúmeros('9')"><h2>9</h2></button>
+							<button type="button" class="btn btn-primary n" id="bseis" onclick="bnúmeros('6')"><h2>6</h2></button>
+							<button type="button" class="btn btn-primary n" id="btrês" onclick="bnúmeros('3')"><h2>3</h2></button>
+							<button type="button" class="btn btn-link s" id="bmais" onclick="bsinais('+')"><h2>+</h2></button>
+							<button type="button" class="btn btn-link s" id="bmenos" onclick="bsinais('-')"><h2>-</h2></button>
+						</div>
+						<div class="col-lg-3">
+							<button type="button" class="btn btn-dark s" id="bigual" onclick="bresultado('=')"><h2>=</h2></button>
+							<button type="button" class="btn btn-link s" id="bvirgula" onclick="bsinais('.')"><h2>.</h2></button>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

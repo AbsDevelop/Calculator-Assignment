@@ -1,0 +1,30 @@
+/* This is a CSS file */
+
+
+h1{
+	text-align: center;
+}
+body {
+ 	background-color:blue;
+ 	height: 500px;
+ 	background-position: center;
+ 	background-repeat: no-repeat; 
+	background-size: cover;
+	font-family: open sans;
+}
+#retângulo{
+    width: 70%;
+    height:110%;
+    background:white;
+    margin-left: 170px;
+    margin-top: 20px;
+}
+.frase{
+	text-align: center;
+}
+#bigual{
+	height: 235px;
+}
+#calculadora{
+	background-color: black;
+}
